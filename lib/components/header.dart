@@ -12,19 +12,22 @@ class Header extends StatelessWidget {
     return Column(
       children: <Widget>[
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Row(
               children: <Widget>[
                 Container(
                   child: Image.asset('images/logo.png'),
-                  height: 25.0,
+                  height: 30.0,
                 ),
                 RichText(
                   text: TextSpan(
                     text: 'DOKITA',
-                    style: TextStyle(color: Colors.indigo.shade400),
+                    style: TextStyle(
+                        color: Colors.indigo.shade200,
+                        fontSize: 20.0,
+                        fontFamily: 'Sans Serif'),
                   ),
                 ),
               ],
@@ -33,7 +36,7 @@ class Header extends StatelessWidget {
               onPressed: onPressed,
               child: Text(
                 linkText,
-                style: TextStyle(color: Colors.indigo.shade200, fontSize: 10.0),
+                style: TextStyle(color: Colors.indigo.shade200, fontSize: 15.0),
                 textAlign: TextAlign.right,
               ),
             ),
