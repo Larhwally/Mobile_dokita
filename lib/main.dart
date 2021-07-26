@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_doctor/screens/questionnaire_end.dart';
+import 'package:mobile_doctor/screens/questionnaire_intro.dart';
 import 'package:mobile_doctor/screens/signin_screen.dart';
 import 'package:mobile_doctor/screens/signup_screen.dart';
 import 'package:mobile_doctor/screens/welcome_screen.dart';
@@ -19,6 +21,8 @@ class MobileDokita extends StatelessWidget {
           WelcomeScreen.id: (context) => WelcomeScreen(),
           SigninScreen.id: (context) => SigninScreen(),
           SignUpScreen.id: (context) => SignUpScreen(),
+          QuestionnaireIntro.id: (context) => QuestionnaireIntro(),
+          QuestionnaireEnd.id: (context) => QuestionnaireEnd(),
         });
   }
 }

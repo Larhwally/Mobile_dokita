@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_doctor/components/header.dart';
 import 'package:mobile_doctor/components/horizontal_lined_text.dart';
 import 'package:mobile_doctor/components/rounded_button.dart';
+import 'package:mobile_doctor/screens/questionnaire_intro.dart';
 import 'package:mobile_doctor/screens/signup_screen.dart';
 import 'package:mobile_doctor/screens/welcome_screen.dart';
 
@@ -73,7 +74,7 @@ class _SigninScreen extends State<SigninScreen> {
                   title: 'Sign in',
                   colour: Colors.indigo.shade200,
                   onPressed: () {
-                    //Do something here
+                    Navigator.pushNamed(context, QuestionnaireIntro.id);
                   },
                 ),
                 SizedBox(

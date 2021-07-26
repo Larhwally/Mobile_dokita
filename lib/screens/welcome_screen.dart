@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_doctor/components/header.dart';
 import 'package:mobile_doctor/components/rounded_button.dart';
+import 'package:mobile_doctor/screens/questionnaire_intro.dart';
 import 'package:mobile_doctor/screens/signin_screen.dart';
 import 'package:mobile_doctor/screens/signup_screen.dart';
 
@@ -70,7 +71,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             RoundedButton(
               title: 'Emergency (SOS)',
               colour: Colors.red.shade400,
-              onPressed: () {},
+              onPressed: () {
+                //Do something here
+              },
             ),
             SizedBox(
               height: 10.0,
