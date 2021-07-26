@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_doctor/components/header.dart';
 import 'package:mobile_doctor/components/rounded_button.dart';
 import 'package:mobile_doctor/screens/signin_screen.dart';
+import 'package:mobile_doctor/screens/signup_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id = 'welcome_screen';
@@ -23,7 +24,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             Header(
               linkText: 'Sign up',
               onPressed: () {
-                //Do something here
+                Navigator.pushNamed(context, SignUpScreen.id);
               },
             ),
             Container(

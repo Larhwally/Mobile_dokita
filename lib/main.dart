@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_doctor/screens/signin_screen.dart';
+import 'package:mobile_doctor/screens/signup_screen.dart';
 import 'package:mobile_doctor/screens/welcome_screen.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MobileDokita extends StatelessWidget {
         routes: {
           WelcomeScreen.id: (context) => WelcomeScreen(),
           SigninScreen.id: (context) => SigninScreen(),
+          SignUpScreen.id: (context) => SignUpScreen(),
         });
   }
 }

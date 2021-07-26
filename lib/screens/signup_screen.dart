@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:mobile_doctor/components/header.dart';
 import 'package:mobile_doctor/components/horizontal_lined_text.dart';
 import 'package:mobile_doctor/components/rounded_button.dart';
-import 'package:mobile_doctor/screens/signup_screen.dart';
+import 'package:mobile_doctor/screens/signin_screen.dart';
 import 'package:mobile_doctor/screens/welcome_screen.dart';
 
-class SigninScreen extends StatefulWidget {
-  static const String id = 'signin_screen';
+class SignUpScreen extends StatefulWidget {
+  static const String id = 'signup_screen';
 
   @override
-  _SigninScreen createState() => _SigninScreen();
+  _SignUpScreenState createState() => _SignUpScreenState();
 }
 
-class _SigninScreen extends State<SigninScreen> {
+class _SignUpScreenState extends State<SignUpScreen> {
   bool _isObscure = true;
 
   @override
@@ -25,7 +25,6 @@ class _SigninScreen extends State<SigninScreen> {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 50.0),
             child: Column(
-              //mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Header(
@@ -35,7 +34,25 @@ class _SigninScreen extends State<SigninScreen> {
                   },
                 ),
                 HorizontalLinedText(
-                  hintText: 'Email',
+                  hintText: 'First Name',
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                HorizontalLinedText(
+                  hintText: 'Last Name',
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                HorizontalLinedText(
+                  hintText: 'Phone Number',
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                HorizontalLinedText(
+                  hintText: 'Email Address',
                 ),
                 SizedBox(
                   height: 10.0,
@@ -67,48 +84,38 @@ class _SigninScreen extends State<SigninScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20.0,
+                  height: 10.0,
+                ),
+                HorizontalLinedText(
+                  hintText: 'Home Address',
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                HorizontalLinedText(
+                  hintText: 'Emergency Contact',
+                ),
+                Flexible(
+                  child: SizedBox(
+                    height: 20.0,
+                  ),
                 ),
                 RoundedButton(
-                  title: 'Sign in',
+                  title: 'Continue',
                   colour: Colors.indigo.shade200,
                   onPressed: () {
                     //Do something here
                   },
                 ),
                 SizedBox(
-                  height: 8.0,
+                  height: 10.0,
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, WelcomeScreen.id);
+                    Navigator.pushNamed(context, SigninScreen.id);
                   },
                   child: Text(
-                    'Forgot password?',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.indigo.shade200,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
-                SizedBox(
-                  height: 40.0,
-                ),
-                Text(
-                  'OR',
-                  textAlign: TextAlign.center,
-                  style:
-                      TextStyle(fontSize: 20.0, color: Colors.indigo.shade200),
-                ),
-                SizedBox(
-                  height: 60.0,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, SignUpScreen.id);
-                  },
-                  child: Text(
-                    'Don\'t have an account? Sign up',
+                    'Already have an account? Sign in',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 20.0, color: Colors.indigo.shade200),
