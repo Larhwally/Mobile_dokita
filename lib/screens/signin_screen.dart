@@ -96,7 +96,7 @@ class _SigninScreen extends State<SigninScreen> {
                   height: 40.0,
                 ),
                 Text(
-                  'OR',
+                  '------------- OR -------------',
                   textAlign: TextAlign.center,
                   style:
                       TextStyle(fontSize: 20.0, color: Colors.indigo.shade200),

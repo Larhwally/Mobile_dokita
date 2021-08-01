@@ -30,7 +30,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             ),
             Container(
               child: Image.asset(
-                'images/banner.png',
+                'images/ban.png',
                 width: 200.0,
                 height: 200.0,
               ),
